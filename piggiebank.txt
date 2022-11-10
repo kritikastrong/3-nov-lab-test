@@ -1,0 +1,54 @@
+package com.ques3;
+
+//declearing a piggiebank class
+public class piggiebank {
+	
+	private String stName;
+	private float amount;
+	
+	//default constructor
+	public piggiebank() {
+		//calling the object class
+		super(); // can be omitted
+		this.stName ="kritika";
+		this.amount =$50;
+		System.out.println("Default.......");
+	}
+	
+    //parameterised constructor
+	public piggiebank(String stName) {
+		this();//constructor chaining
+		System.out.println("paramterised 1......");
+		this.stName = stName;
+		
+	}
+	
+	// parameterised constructor
+	public piggiebank(string stName, float amount) {
+		this(stName);
+		System.out.println("paramterised 2....");
+		//this refers to current object
+		
+		this.amount = amount;
+	}
+	
+	//copy constructor
+	
+	public piggiebank(piggiebank p) {
+		this.stName = p.stName;
+		this.amount = p.amount;
+	}
+	public String getstName() {
+		return stName;
+	}
+	public void setStName(String stName) {
+		this.stName = stName;
+	}
+	public float getAmount() {
+		return amount;
+	}
+	public void setAmount(float amount) {
+		this.amount =amount;
+		
+	}
+}

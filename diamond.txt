@@ -1,0 +1,61 @@
+package com.ques1;
+
+//declaring a diamond class
+public class diamond {
+	
+	//main method
+	public static void main(String[] args)
+	{
+		
+		//creating scanner object
+		Scanner sc=new Scanner(System.in);
+		
+		//taking input
+		System.out.println("Enter N : ");
+		int n=sc.nextInt();
+		System.out.print("Enter Symbol : ");
+		
+		char c = sc.next() .charAt(0);
+		int i=1;
+		int j;
+		
+		//started do while loop
+		do
+		{
+			j=1;
+			do
+			{
+				System.out.print(" ");
+				
+			}
+			while(++j<=n-i+1);
+			j=1;
+			do
+			{
+				System.out.print(c);
+				
+			}while(++j<=i*2-1);
+			System.out.print(" ");
+			
+		}while(++j<=n-i+1);
+		j=1;
+		do
+		{
+			System.out.print(c);
+			
+		}while(++j<=i*2-1);
+		
+		System.out.println();
+		
+	}while( --i>0);
+	
+	//main method ends
+	
+	// while loop ends
+}
+}
+			
+		
+		
+	
+

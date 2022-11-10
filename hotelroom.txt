@@ -1,0 +1,142 @@
+package com.ques2;
+
+public class hotelroom {
+
+	//initialing global scanner variable
+	public static Scanner in = new Scanner(System.in);
+	
+	//user answer
+	public static String yesNo;
+	
+	//our fixed prices
+	public static int deluxDoublefixedprice = 5000;
+	public static int standardFamilyfixedprice = 3000;
+	public static int standardSinglefixedprice = 2000;
+	
+	//out extra services price
+    public static int balconyprice = 500;
+    public static int parkingprice = 200;
+    public static int tvprice = 200;
+    public static int kitchenprice = 1000;
+    public static int wifiprice = 100;
+    public static int gardenprice = 200;
+    public static int acprice = 500;
+    
+    //main method
+    pubic static void main(String[] args) {
+    	
+    	//user menu
+    	System.out.println("Welcome to Room charge Calculator!!\n**please choose a room you afford**");
+    	System.out.println("1.Delux Double Room");
+    	System.out.println("2.Standard Family Room");
+    	System.out.println("3.Standard Single Room");
+    	System.out.println("4.Quit ");
+    	System.out.println("please Enter Number 1-4:");
+    	int chooseNum = in.nextInt();
+    	
+    	//user choose action
+    	switch (chooseNum) {
+    	case 1:
+    		System.out.println();
+    		System.out.println("Delux Double room fixed price: " + deluxfixedprice +"\n");
+    		
+    		//show additional item price
+    		System.out.println("*** our additional services ***");
+    		System.out.println("For Balcony charge: " + balconyprice);
+    		System.out.println("For Parking charge: " + parkingprice);
+    		System.out.println("For TV charge: " + tvprice);
+    		System.out.println("For Kitchen charge: " + kitchenprice);
+    		System.out.println("For WiFi charge: " + wifiprice);
+    		
+    		// user answer input
+    		System.out.print("Do you need more service? yes/No:");
+    		yesNo = in.next();
+    		
+    		//calling the method
+    		getChargeDeluxDouble(balconyConfirmed,parkingConfirmed,tvConfirmed,kitchenConfirmed,wifiConfirmed);
+    	} else {
+    		System.out.println("****************");
+    		System.out.println("your total room charge :" +deluxDoublefixedprice);
+    	}
+    	break;
+    	
+    	 case 2:
+    		 System.out.println();
+    		 System.out.println("standard family room fixed price:"+StandardFamilyfixedprice +"\n");
+    		 
+    		//show additional item price
+     		System.out.println("*** our additional services ***");
+     		System.out.println("For Balcony charge: " + balconyprice);
+     		System.out.println("For Parking charge: " + parkingprice);
+     		System.out.println("For TV charge: " + tvprice);
+     		System.out.println("For Kitchen charge: " + kitchenprice);
+     		System.out.println("For WiFi charge: " + wifiprice);
+     		
+     		// user answer input
+     		System.out.print("Do you need more service? yes/No:");
+     		yesNo = in.next();
+     		
+     		//calling the method
+    		getChargeDeluxDouble(balconyConfirmed,parkingConfirmed,tvConfirmed,kitchenConfirmed,wifiConfirmed);
+    	} else {
+    		System.out.println("****************");
+    		System.out.println("your total room charge :" +standardFamilyfixedprice);
+    	}
+    	break;
+    	
+    	case 3:
+    		
+    		 System.out.println();
+    		 System.out.println("standard single family room fixed price:"+StandardsingleFamilyfixedprice +"\n");
+    		 
+    		//show additional item price
+     		System.out.println("*** our additional services ***");
+     		System.out.println("For Balcony charge: " + balconyprice);
+     		System.out.println("For Parking charge: " + parkingprice);
+     		System.out.println("For TV charge: " + tvprice);
+     		System.out.println("For Kitchen charge: " + kitchenprice);
+     		System.out.println("For WiFi charge: " + wifiprice);
+     		
+     		// user answer input
+     		System.out.print("Do you need more service? yes/No:");
+     		yesNo = in.next();
+     		
+     		//calling the method
+    		getChargeDeluxDouble(balconyConfirmed,parkingConfirmed,tvConfirmed,kitchenConfirmed,wifiConfirmed);
+    	} else {
+    		System.out.println("****************");
+    		System.out.println("your total room charge :" +standardSingleFamilyfixedprice);
+    	}
+    	break;
+    	case 4:
+    		System.out.println("Sorry to see you leave(- -)");
+    		in.close();
+    		break;
+    		}
+    		}
+    		
+    		//confirming user extra choose items
+    		public static boolean
+    		confirmExtra(String answer);
+    		{
+    			boolean confirm;
+    			if
+    			(answer.toLowerCase()equals("yes")) {
+    				confirm =false;
+    			}
+    			
+    			return confirm;
+    		}
+   
+    		}	
+    		
+    				
+    		
+    		
+    	
+    	
+   
+    
+    
+
+
